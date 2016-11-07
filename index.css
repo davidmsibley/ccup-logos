@@ -1,4 +1,30 @@
-body {
+html {
+	overflow: hidden;
+}
+body div img {
+	position: absolute;
+	left : 0;
+	top : 0;
 	height: 100%;
 	width: 100%;
+}
+
+.activated {
+	opacity: 1;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-property: opacity;
+	transition-duration: 1.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.queued {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-property: opacity;
+	transition-duration: 1.5s;
+	transition-timing-function: ease-in-out;
 }
